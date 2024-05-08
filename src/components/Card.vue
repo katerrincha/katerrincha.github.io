@@ -4,7 +4,8 @@ defineProps({
   company: String,
   city: String,
   isAdded: Boolean,
-  onClickAdd: Function
+  onClickAdd: Function,
+  onClickRespond: Function
 })
 </script>
 
@@ -12,7 +13,7 @@ defineProps({
   <div
     class="relative bg-white border border-slate-200 rounded-2xl px-11 py-8 cursor-pointer transition hover:-translate-y-1 hover:shadow-lg"
   >
-    <img src="/mark.png" alt="mark-1" class="w-4 absolute top-4 left-4" />
+    <img @click="onClickAdd" src="/mark.png" alt="mark-1" class="w-4 absolute top-4 left-4" />
     <!--@click="onClickAdd"-->
     <div class="flex flex-wrap justify-between items-top gap-5">
       <div class="flex flex-col">
@@ -27,6 +28,7 @@ defineProps({
       </div>
       <div>
         <button
+          @click="onClickRespond"
           class="py-2 px-3 text-gray-900 bg-white border border-gray-300 hover:bg-indigo-500 hover:text-white hover:border-none rounded-xl text-sm"
         >
           Откликнуться

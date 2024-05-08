@@ -3,7 +3,7 @@ import CardList from '../components/CardList.vue'
 </script>
 
 <template>
-  <div class="p-10">
+  <div class="px-36 py-10">
     <div class="flex flex-wrap justify-between items-center gap-4">
       <h2 class="text-2xl font-bold">Все вакансии</h2>
       <div class="flex flex-wrap gap-5">

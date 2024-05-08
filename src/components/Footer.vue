@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col justify-between bg-indigo-600 rounded-b-lg gap-8 border-t flex-wrap border-slate-200 px-14 py-6"
+    class="flex flex-col justify-between bg-indigo-600 rounded-b-lg gap-8 border-t flex-wrap border-slate-200 px-20 py-6"
   >
     <div class="text-white text-sm">
       <h1 class="text-lg mb-4">Контакты</h1>

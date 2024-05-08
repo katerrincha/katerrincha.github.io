@@ -18,7 +18,7 @@ watch(sortBy, async()=> {
 </script>
 
 <template>
-  <div class="bg-white w-9/12 m-auto my-8 rounded-lg shadow-2xl">
+  <div class="bg-white w-11/12 m-auto my-8 rounded-lg shadow-2xl">
     <Header />
 
     <div><RouterView /></div>

@@ -4,6 +4,9 @@ import Card from './Card.vue'
 const onClickAdd = () => {
   alert('Вакансия добавлена в избранное!')
 }
+const onClickRespond = () => {
+  alert('Поздравляем, Вы откликнулись на вакансию!')
+}
 </script>
 
 <template>
@@ -14,6 +17,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="true"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="PHP разработчик"
@@ -21,6 +25,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="Vue разработчик"
@@ -28,6 +33,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="1C разработчик"
@@ -35,13 +41,15 @@ const onClickAdd = () => {
       city="Москва"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="React разработчик"
       company="Сбербанк"
-      city="Томск"
+      city="Санкт-Петербург"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="React разработчик"
@@ -49,6 +57,7 @@ const onClickAdd = () => {
       city="Москва"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="Golang разработчик"
@@ -56,6 +65,7 @@ const onClickAdd = () => {
       city="Москва"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="IOS разработчик"
@@ -63,6 +73,7 @@ const onClickAdd = () => {
       city="Казань"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="Android разработчик"
@@ -70,6 +81,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="JAVA разработчик"
@@ -77,6 +89,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="1C аналитик"
@@ -84,6 +97,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="Системный аналитик"
@@ -91,6 +105,7 @@ const onClickAdd = () => {
       city="Казань"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="PHP разработчик"
@@ -98,6 +113,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="IOS разработчик"
@@ -105,6 +121,7 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
     <Card
       title="Android разработчик"
@@ -112,6 +129,31 @@ const onClickAdd = () => {
       city="Томск"
       :is-added="false"
       :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
+    />
+    <Card
+      title="Vue разработчик"
+      company="Яндекс"
+      city="Санкт-Петербург"
+      :is-added="false"
+      :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
+    />
+    <Card
+      title="1C разработчик"
+      company="Газпромбанк"
+      city="Томск"
+      :is-added="false"
+      :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
+    />
+    <Card
+      title="IOS разработчик"
+      company="Сбербанк"
+      city="Санкт-Петербург"
+      :is-added="false"
+      :onClickAdd="onClickAdd"
+      :onClickRespond="onClickRespond"
     />
   </div>
 </template>
