@@ -12,13 +12,8 @@ defineProps({
   <div
     class="relative bg-white border border-slate-200 rounded-2xl px-11 py-8 cursor-pointer transition hover:-translate-y-1 hover:shadow-lg"
   >
-    <img
-      @click="onClickAdd"
-      :src="!isAdded ? 'public/mark.png' : 'public/mark-2.png'"
-      alt="mark-1"
-      class="w-4 absolute top-4 left-4"
-    />
-
+    <img src="/mark.png" alt="mark-1" class="w-4 absolute top-4 left-4" />
+    <!--@click="onClickAdd"-->
     <div class="flex flex-wrap justify-between items-top gap-5">
       <div class="flex flex-col">
         <b class="text-lg">{{ title }}</b>

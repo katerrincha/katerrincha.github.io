@@ -2,7 +2,7 @@
 
 <template>
   <div class="flex flex-col gap-6">
-    <div class="bg-cover bg-center h-auto" style="background-image: url('public/job.jpg')">
+    <div class="bg-cover bg-center h-auto bg-[url('/job.jpg')]">
       <div class="flex flex-col px-16 py-36 mb-12 w-1/2 gap-12">
         <h1 class="text-3xl font-bold text-indigo-600 uppercase transition hover:-translate-y-1">
           Обратитесь к <span class="text-gray-600">IT PROFI</span> сегодня и начните поиск
