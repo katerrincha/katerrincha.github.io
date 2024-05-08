@@ -6,7 +6,6 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 
 // https://vitejs.dev/config/
 export default defineConfig({
-  base: '/katerrincha.github.io',
   plugins: [vue(), vueJsx()],
   resolve: {
     alias: {
