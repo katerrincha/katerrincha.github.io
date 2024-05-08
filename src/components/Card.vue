@@ -14,7 +14,7 @@ defineProps({
   >
     <img
       @click="onClickAdd"
-      :src="!isAdded ? '/mark.png' : '/mark-2.png'"
+      :src="!isAdded ? 'public/mark.png' : 'public/mark-2.png'"
       alt="mark-1"
       class="w-4 absolute top-4 left-4"
     />
