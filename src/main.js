@@ -7,7 +7,7 @@ initTWE({ Carousel })
 
 import App from './App.vue'
 import Home from './pages/Home.vue'
-import About from './pages/About.vue'
+import Employer from './pages/Employer.vue'
 import Vacancy from './pages/Vacancy.vue'
 import Marks from './pages/Marks.vue'
 
@@ -18,7 +18,7 @@ const app = createApp(App)
 
 const routes = [
   { path: '/', name: 'Home', component: Home },
-  { path: '/about', name: 'About', component: About },
+  { path: '/employer', name: 'Employer', component: Employer },
   { path: '/vacancy', name: 'Vacancy', component: Vacancy },
   { path: '/marks', name: 'Marks', component: Marks }
 ]

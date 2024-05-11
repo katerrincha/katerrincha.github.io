@@ -20,10 +20,10 @@
         </li>
       </RouterLink>
 
-      <RouterLink to="/about">
+      <RouterLink to="/employer">
         <li class="flex items-center text-gray-500 cursor-pointer gap-3 hover:text-black">
           <img src="/about.png" alt="about" class="w-5 opacity-40" />
-          <span>О нас</span>
+          <span>Работодателям</span>
         </li>
       </RouterLink>
 
