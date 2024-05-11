@@ -4,7 +4,7 @@ import Carousel from '../components/Carousel.vue'
 
 <template>
   <div class="flex flex-col gap-6">
-    <Carousel />
+    <!--<Carousel />-->
     <div class="bg-cover bg-center h-auto bg-[url('/job.jpg')]">
       <div class="flex flex-col mx-28 my-32 px-16 py-16 w-1/2 gap-12 bg-white/10 rounded-2xl">
         <h1 class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1">
@@ -33,13 +33,13 @@ import Carousel from '../components/Carousel.vue'
 
     <div class="flex flex-row px-14 py-8 justify-center flex-wrap gap-4">
       <div
-        class="flex flex-col justify-center gap-4 w-80 bg-indigo-500 rounded-3xl px-12 py-12 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 border-indigo-400"
+        class="flex flex-col justify-center text-gray-800 gap-4 w-80 bg-indigo-500 rounded-3xl px-12 py-12 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 border-indigo-400"
       >
         <h1 class="text-5xl font-bold">9 лет</h1>
         <h2 class="text-xl font-bold">эффективно помогаем работодателям и сотрудникам</h2>
       </div>
       <div
-        class="flex flex-col justify-center gap-4 w-80 bg-slate-300 border-indigo-400 rounded-3xl px-12 py-12 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500"
+        class="flex flex-col justify-center text-gray-800 gap-4 w-80 bg-slate-300 border-indigo-400 rounded-3xl px-12 py-12 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500"
       >
         <h1 class="text-5xl font-bold">> 15 000</h1>
         <h2 class="text-xl font-bold">клиентов нашли любимую работу</h2>
@@ -88,7 +88,7 @@ import Carousel from '../components/Carousel.vue'
         <div class="flex items-center gap-8 transition hover:-translate-y-0.5">
           <img class="w-6" src="/black_arrow.png" alt="arrow" />
           <div>
-            <span class="font-medium">Широкая база кандидатов.<br /><br /></span>
+            <span class="font-medium">Широкая база кандидатов<br /><br /></span>
             <span class="text-indigo-600">
               Мы имеем доступ к обширной сети специалистов по всему миру. Это позволяет нам найти и
               привлечь лучших кандидатов, соответствующих вашим требованиям.</span
@@ -99,7 +99,7 @@ import Carousel from '../components/Carousel.vue'
         <div class="flex items-center gap-8 transition hover:-translate-y-0.5">
           <img class="w-6" src="/black_arrow.png" alt="arrow" />
           <div>
-            <span class="font-medium">Сокращение времени на найм.<br /><br /></span>
+            <span class="font-medium">Сокращение времени на найм<br /><br /></span>
             <span class="text-indigo-600">
               Благодаря эффективному отбору наша платформа помогает сократить время на заполнение
               вакансий, что позволяет компаниям быстрее реагировать на изменения на рынке
@@ -111,7 +111,7 @@ import Carousel from '../components/Carousel.vue'
         <div class="flex items-center gap-8 transition hover:-translate-y-0.5">
           <img class="w-6" src="/black_arrow.png" alt="arrow" />
           <div>
-            <span class="font-medium">Быстрый и эффективный подбор персонала.<br /><br /></span>
+            <span class="font-medium">Быстрый и эффективный подбор персонала<br /><br /></span>
             <span class="text-indigo-600">
               Мы понимаем, что время - самый ценный ресурс для вашего бизнеса. С нами вы можете быть
               уверены, что ваша вакансия будет заполнена квалифицированным специалистом в кратчайшие

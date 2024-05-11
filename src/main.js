@@ -2,8 +2,10 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import App from './App.vue'
+import { Carousel, initTWE } from 'tw-elements'
+initTWE({ Carousel })
 
+import App from './App.vue'
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Vacancy from './pages/Vacancy.vue'
@@ -28,6 +30,3 @@ const router = createRouter({
 
 app.use(router)
 app.mount('#app')
-
-import { Carousel, initTWE } from 'tw-elements'
-initTWE({ Carousel })
