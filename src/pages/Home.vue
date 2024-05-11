@@ -73,13 +73,14 @@ import Carousel from '../components/Carousel.vue'
           инновируют и приводят их бизнес к новым высотам.
         </p>
       </div>
-
-      <div
-        class="flex justify-between items-center gap-6 py-4 px-6 text-base cursor-pointer text-indigo-600 font-medium transition hover:-translate-y-1.5"
-      >
-        <span> Опубликовать вакансию </span>
-        <img class="w-6" src="/blue_arrow.png" alt="white_arrow" />
-      </div>
+      <RouterLink to="/employer">
+        <div
+          class="flex justify-between items-center gap-6 py-4 px-6 text-base cursor-pointer text-indigo-600 font-medium transition hover:-translate-y-1.5"
+        >
+          <span> Опубликовать вакансию </span>
+          <img class="w-6" src="/blue_arrow.png" alt="white_arrow" />
+        </div>
+      </RouterLink>
     </div>
 
     <div class="flex flex-col flex-wrap gap-4 px-36 py-10 mb-10">
