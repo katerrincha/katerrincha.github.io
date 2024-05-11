@@ -1,3 +1,11 @@
+<script setup>
+import DoVacancy from '../components/DoVacancy.vue'
+
+const onClickPublic = () => {
+  alert('Поздравляем, ваша вакансия размещена в системе!')
+}
+</script>
+
 <template>
-  <h1>ТУТ АНКЕТА</h1>
+  <DoVacancy :onClickPublic="onClickPublic" />
 </template>

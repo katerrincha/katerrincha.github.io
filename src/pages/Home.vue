@@ -11,14 +11,16 @@ import Carousel from '../components/Carousel.vue'
           Обратитесь к <span class="text-gray-600">IT PROFI</span> сегодня и начните поиск
           идеального кандидата для вашей команды
         </h1>
-
         <div class="flex flex-row gap-12 flex-wrap">
-          <div
-            class="flex justify-between items-center gap-4 text-base font-medium transition hover:-translate-y-1"
-          >
-            <span class="text-white"> Ищу сотрудника </span>
-            <img class="w-6" src="/white_arrow.png" alt="white_arrow" />
-          </div>
+          <RouterLink to="/employer">
+            <div
+              class="flex justify-between items-center gap-4 text-base font-medium transition hover:-translate-y-1"
+            >
+              <span class="text-white"> Ищу сотрудника </span>
+              <img class="w-6" src="/white_arrow.png" alt="white_arrow" />
+            </div>
+          </RouterLink>
+
           <RouterLink to="/vacancy">
             <div
               class="flex justify-between items-center gap-4 text-base font-medium transition hover:-translate-y-1"
