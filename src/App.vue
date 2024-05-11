@@ -5,9 +5,9 @@ import Footer from './components/Footer.vue'
 //import CardList from './components/CardList.vue'
 //import { watch } from 'vue'
 
-/*import { Carousel, initTWE } from 'tw-elements'
+import { Carousel, initTWE } from 'tw-elements'
 
-initTWE({ Carousel })*/
+initTWE({ Carousel })
 
 /*const sortBy = ref('')
 const searchQ = ref('')

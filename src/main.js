@@ -3,12 +3,13 @@ import './assets/main.css'
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import App from './App.vue'
-// Initialization for ES Users
 
 import Home from './pages/Home.vue'
 import About from './pages/About.vue'
 import Vacancy from './pages/Vacancy.vue'
 import Marks from './pages/Marks.vue'
+
+// Initialization for ES Users
 
 //createApp(App).mount('#app')
 const app = createApp(App)
@@ -27,3 +28,6 @@ const router = createRouter({
 
 app.use(router)
 app.mount('#app')
+
+import { Carousel, initTWE } from 'tw-elements'
+initTWE({ Carousel })

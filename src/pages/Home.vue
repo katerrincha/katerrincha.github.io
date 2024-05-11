@@ -1,7 +1,10 @@
-<script setup></script>
+<script setup>
+import Carousel from '../components/Carousel.vue'
+</script>
 
 <template>
   <div class="flex flex-col gap-6">
+    <Carousel />
     <div class="bg-cover bg-center h-auto bg-[url('/job.jpg')]">
       <div class="flex flex-col mx-28 my-32 px-16 py-16 w-1/2 gap-12 bg-white/10 rounded-2xl">
         <h1 class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1">
