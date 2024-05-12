@@ -4,57 +4,52 @@ import CardList from '../components/CardList.vue'
 
 <template>
   <div class="px-56 py-24">
-    <div class="mb-6 bg-indigo-50 rounded-3xl hover:shadow-xl transition hover:-translate-y-1">
-      <div class="grid grid-rows-1 grid-cols-3 gap-10">
-        <span class="col-span-1 font-bold text-3xl my-10 ml-10"
-          >Найдите идеальную работу с помощью нашего поиска</span
-        >
-        <span class="col-span-2 my-10 mr-10"
-          ><span class="font-bold text-indigo-500 font"
-            >Используйте удобный инструмент поиска для фильтрации
-          </span>
-          вакансий по названию, организации и местоположению. Это поможет вам быстро найти вакансии,
-          соответствующие вашим интересам и навыкам. Каждая вакансия содержит подробное описание
-          обязанностей, требований к кандидатам и условий работы. Вы сможете ознакомиться с
-          ключевыми задачами, которые вам предстоит решать, и узнать больше о том, что делает эту
-          компанию особенной.</span
-        >
-      </div>
-    </div>
-
-    <div class="grid grid-rows-2 grid-flow-col gap-5 mb-20">
+    <div class="grid grid-rows-2 grid-cols-4 gap-3 mt-8 mb-20">
       <div
-        class="row-span-1 col-span-2 text-indigo-400 bg-white border-2 border-indigo-400 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-400 hover:text-white"
+        class="row-span-1 col-span-2 place-content-center text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-10 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0"
       >
-        <span class="font-bold text-3xl leading-10"
-          >Поиск разнообразных и интересных возможностей для вашего профессионального роста и
-          развития карьеры</span
+        <span class="font-bold text-3xl"
+          >Идеальная вакансия ждет Вас - просто найдите ее здесь</span
         >
       </div>
 
       <div
-        class="row-span-1 col-span-1 grid place-content-between text-white bg-indigo-400 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 hover:border-indigo-500 hover:text-indigo-500"
-      >
-        <h1 class="text-4xl font-bold">2</h1>
-        <h2 class="text-2xl font-bold">найдите интересующую вас вакансию</h2>
-      </div>
-      <div
-        class="row-span-1 col-span-1 grid place-content-between text-white gap-4 bg-indigo-400 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 hover:border-indigo-500 hover:text-indigo-500"
-      >
-        <h1 class="text-4xl font-bold">3</h1>
-        <h2 class="text-2xl font-bold">откликнитесь на предложение</h2>
-      </div>
-      <div
-        class="row-span-1 col-span-1 grid place-content-between text-indigo-400 bg-white border-2 border-indigo-400 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-400 hover:text-white"
+        class="row-span-1 col-span-1 grid place-content-between text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0"
       >
         <h1 class="text-4xl font-bold space">1</h1>
-        <h2 class="text-2xl font-bold">разместите резюме на сайте</h2>
+        <h2 class="text-xl font-bold">разместите свое резюме на платформе</h2>
       </div>
+
       <div
-        class="row-span-1 col-span-1 grid place-content-between text-white gap-4 bg-indigo-400 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 hover:border-indigo-500 hover:text-indigo-500"
+        class="row-span-1 col-span-1 grid place-content-between text-white bg-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 hover:border-indigo-500 hover:text-indigo-500"
+      >
+        <h1 class="text-4xl font-bold">2</h1>
+        <h2 class="text-xl font-bold">найдите подходящую вакансию</h2>
+      </div>
+
+      <div
+        class="row-span-1 col-span-1 grid place-content-between text-white bg-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 hover:border-indigo-500 hover:text-indigo-500"
+      >
+        <h1 class="text-4xl font-bold">3</h1>
+        <h2 class="text-xl font-bold">откликнитесь на предложение</h2>
+      </div>
+
+      <div
+        class="row-span-1 col-span-1 grid place-content-between text-white bg-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white border-2 hover:border-indigo-500 hover:text-indigo-500"
       >
         <h1 class="text-4xl font-bold">4</h1>
-        <h2 class="text-2xl font-bold">ожидайте ответа от работодателя</h2>
+        <h2 class="text-xl font-bold">ожидайте ответа от работодателя</h2>
+      </div>
+
+      <div
+        class="row-span-1 col-span-2 text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0"
+      >
+        <span class="font-bold"
+          >Используя инструмент фильтрации, Вы быстрее найдете вакансии, соответствующие Вашим
+          интересам и навыкам. Каждая вакансия содержит подробное описание условий, где Вы сможете
+          ознакомиться с ключевыми задачами, которые предстоит решать, и узнать больше о том, что
+          делает эту компанию особенной.</span
+        >
       </div>
     </div>
 
