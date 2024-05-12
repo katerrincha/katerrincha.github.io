@@ -15,7 +15,7 @@ defineProps({
   >
     <img @click="onClickAdd" src="/mark.png" alt="mark-1" class="w-4 absolute top-4 left-4" />
     <!--@click="onClickAdd"-->
-    <div class="flex flex-wrap justify-between items-top gap-5">
+    <div class="flex flex-wrap flex-col justify-between items-top gap-5">
       <div class="flex flex-col">
         <b class="text-lg">{{ title }}</b>
         <div class="mt-3">
