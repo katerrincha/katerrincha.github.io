@@ -2,7 +2,7 @@
 import DoVacancy from '../components/DoVacancy.vue'
 
 const onClickPublic = () => {
-  alert('Поздравляем, ваша вакансия размещена в системе!')
+  alert('Поздравляем, ваша вакансия успешно размещена в системе!')
 }
 </script>
 

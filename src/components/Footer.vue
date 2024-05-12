@@ -4,7 +4,7 @@
   >
     <div class="flex flex-row gap-32 mb-6">
       <div class="text-white text-sm space-y-3">
-        <h1 class="text-lg mb-6">Контакты</h1>
+        <h1 class="text-base font-semibold mb-7">Контакты:</h1>
         <div class="flex flex-row items-center gap-4">
           <img class="w-5" src="/phone.png" alt="phone" />
           <div class="flex flex-col">
@@ -30,9 +30,9 @@
         </div>
       </div>
       <div class="flex flex-col flex-wrap text-base text-white">
-        <h1 class="text-lg mb-4">Работу выполнила:</h1>
-        <h2 class="font-bold">Бочкарева Екатерина Алексеевна</h2>
-        <h2 class="font-bold">г. Томск</h2>
+        <h1 class="font-semibold mb-6">Работу выполнила:</h1>
+        <h2 class="">Бочкарева Екатерина Алексеевна</h2>
+        <h2 class="">г. Томск</h2>
       </div>
     </div>
 
