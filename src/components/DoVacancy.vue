@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <form
-    class="mx-56 mb-12 mt-12 p-10 space-y-6 border border-gray-200 rounded-3xl hover:shadow-xl hover:bg-gray-200 duration-1000"
+    class="mx-56 mb-12 mt-12 p-10 space-y-6 border border-gray-200 bg-gray-100 rounded-3xl hover:shadow-xl hover:bg-gray-200 duration-1000"
   >
     <div class="grid md:grid-cols-2 gap-6">
       <div class="relative z-0 w-full group">
