@@ -7,7 +7,9 @@
     <!--<Carousel />-->
     <div class="bg-cover bg-center bg-[url('/job.jpg')]">
       <div class="flex flex-col mx-56 mb-32 mt-48 px-24 py-16 w-1/2 gap-6 bg-white/10 rounded-3xl">
-        <h1 class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1">
+        <h1
+          class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1 duration-700"
+        >
           Обратитесь к <span class="text-gray-600">IT PROFI</span> сегодня и начните поиск
           идеального кандидата для вашей команды
         </h1>
@@ -18,7 +20,7 @@
         <div class="flex flex-row gap-12 flex-wrap mt-12">
           <RouterLink to="/employer">
             <div
-              class="flex justify-between items-center gap-4 text-lg font-semibold transition hover:translate-x-1.5"
+              class="flex justify-between items-center gap-4 text-lg font-bold transition hover:translate-x-2 duration-700"
             >
               <span class="text-white"> Ищу сотрудника </span>
               <img class="w-6" src="/white_arrow.png" alt="white_arrow" />
@@ -27,7 +29,7 @@
 
           <RouterLink to="/vacancy">
             <div
-              class="flex justify-between items-center gap-4 text-lg font-semibold transition hover:translate-x-1.5"
+              class="flex justify-between items-center gap-4 text-lg font-bold transition hover:translate-x-2 duration-700"
             >
               <span class="text-white"> Ищу работу </span>
               <img class="w-6" src="/white_arrow.png" alt="white_arrow" />
@@ -37,21 +39,21 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-4 grid-rows-1 px-56 py-8 gap-4">
+    <div class="grid grid-cols-4 grid-rows-1 px-56 pt-8 gap-4">
       <div
-        class="col-span-2 place-content-between text-gray-700 border-2 border-gray-700 space-y-14 bg-white rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indig0-50 hover:text-white hover:bg-indigo-500 hover:border-0"
+        class="col-span-2 grid place-content-between text-gray-700 border-2 border-gray-700 space-y-14 bg-white rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indig0-50 hover:text-white hover:bg-indigo-500 hover:border-0 duration-700"
       >
         <h1 class="text-4xl font-bold">9 лет</h1>
         <h2 class="text-xl font-bold">эффективно помогаем работодателям и сотрудникам</h2>
       </div>
       <div
-        class="col-span-1 place-content-between space-y-14 text-white bg-indigo-500 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white hover:border-2 hover:border-indigo-500 hover:text-indigo-500"
+        class="col-span-1 grid place-content-between text-indigo-500 border-2 border-indigo-500 space-y-14 bg-white rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indig0-50 hover:text-white hover:bg-indigo-500 hover:border-0 duration-700"
       >
         <h1 class="text-4xl font-bold">> 11 000</h1>
         <h2 class="text-xl font-bold">клиентов нашли любимую работу</h2>
       </div>
       <div
-        class="col-span-1 place-content-between space-y-14 text-white bg-indigo-500 rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-white hover:border-2 hover:border-indigo-500 hover:text-indigo-500"
+        class="col-span-1 grid place-content-between text-indigo-500 border-2 border-indigo-500 space-y-14 bg-white rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indig0-50 hover:text-white hover:bg-indigo-500 hover:border-0 duration-700"
       >
         <h1 class="text-4xl font-bold">8 714</h1>
         <h2 class="text-xl font-bold">актуальных вакансий на сайте</h2>
@@ -81,7 +83,7 @@
       </div>
       <RouterLink to="/employer">
         <div
-          class="flex justify-between items-center gap-6 py-4 px-6 text-lg cursor-pointer text-indigo-600 font-semibold transition hover:translate-x-1.5"
+          class="flex justify-between items-center text-lg gap-6 py-4 px-6 cursor-pointer text-indigo-500 font-bold transition hover:translate-x-2 hover:text-indigo-800 duration-700"
         >
           <span> Опубликовать вакансию </span>
           <img class="w-6" src="/blue_arrow.png" alt="white_arrow" />
@@ -89,10 +91,10 @@
       </RouterLink>
     </div>
 
-    <div class="flex flex-col flex-wrap gap-4 px-56 mb-20 pt-14">
+    <div class="flex flex-col flex-wrap gap-4 px-56 mb-20 pt-10">
       <span class="text-4xl font-bold">Почему IT PROFI?</span>
       <div class="flex flex-row gap-10 pt-8">
-        <div class="flex items-center gap-8 transition hover:translate-x-1">
+        <div class="flex items-center gap-8 transition hover:translate-x-1.5 duration-700">
           <img class="w-6" src="/black_arrow.png" alt="arrow" />
           <div>
             <span class="font-medium">Широкая база кандидатов<br /><br /></span>
@@ -103,7 +105,7 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-8 transition hover:translate-x-1">
+        <div class="flex items-center gap-8 transition hover:translate-x-1.5 duration-700">
           <img class="w-6" src="/black_arrow.png" alt="arrow" />
           <div>
             <span class="font-medium">Сокращение времени на найм<br /><br /></span>
@@ -115,7 +117,7 @@
           </div>
         </div>
 
-        <div class="flex items-center gap-8 transition hover:translate-x-1">
+        <div class="flex items-center gap-8 transition hover:translate-x-1.5 duration-700">
           <img class="w-6" src="/black_arrow.png" alt="arrow" />
           <div>
             <span class="font-medium">Быстрый и эффективный подбор персонала<br /><br /></span>

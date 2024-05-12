@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <form
-    class="mx-56 mb-12 mt-12 p-10 space-y-6 border border-gray-200 bg-gray-100 rounded-3xl hover:shadow-xl hover:bg-gray-200 duration-1000"
+    class="mx-56 mb-20 mt-12 p-10 space-y-6 border border-gray-300 bg-gray-100 rounded-3xl hover:border-0 hover:shadow-xl hover:bg-gray-200 transition hover:-translate-y-0.5 duration-700"
   >
     <div class="grid md:grid-cols-2 gap-6">
       <div class="relative z-0 w-full group">
@@ -159,7 +159,7 @@ defineProps({
     <button
       @click="onClickPublic"
       type="submit"
-      class="text-white bg-indigo-500 hover:bg-indigo-600 focus:ring-4 focus:outline-none focus:ring-indigo-200 font-medium rounded-2xl text-sm px-5 py-2.5 text-center duration-500"
+      class="text-white bg-indigo-500 hover:bg-indigo-600 font-medium rounded-2xl text-sm px-5 py-2.5 text-center duration-500"
     >
       Разместить вакансию
     </button>

@@ -5,7 +5,7 @@ import CardList from '../components/CardList.vue'
 <template>
   <div class="px-56 pt-36">
     <h1 class="font-bold text-4xl">Идеальная вакансия ждет Вас - просто найдите ее здесь</h1>
-    <div class="grid grid-rows-2 grid-cols-4 gap-3 mt-12 mb-16">
+    <div class="grid grid-rows-2 grid-cols-4 gap-4 mt-12 mb-16">
       <div
         class="row-span-1 col-span-2 grid place-content-between text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
       >
@@ -46,7 +46,7 @@ import CardList from '../components/CardList.vue'
       </div>
     </div>
 
-    <div class="flex flex-row justify-between items-center gap-6 pb-10 mb-16">
+    <div class="flex flex-row justify-between items-center gap-6 mb-16">
       <span class="w-2/3">
         Вы можете легко и быстро откликнуться на интересующие вас вакансии,
         <span class="font-bold text-indigo-500 font">отправив свое резюме</span> и сопроводительное
@@ -55,7 +55,7 @@ import CardList from '../components/CardList.vue'
       </span>
       <RouterLink to="/employer">
         <div
-          class="flex justify-between items-center gap-6 py-4 px-6 text-indigo-500 font-semibold transition hover:translate-x-1.5 hover:text-indigo-800 duration-700"
+          class="flex justify-between items-center gap-6 py-4 px-6 text-indigo-500 text-lg font-bold transition hover:translate-x-1.5 hover:text-indigo-800 duration-700"
         >
           <span> Разместить резюме </span>
           <img class="w-6" src="/blue_arrow.png" alt="white_arrow" />
@@ -64,7 +64,7 @@ import CardList from '../components/CardList.vue'
     </div>
 
     <div class="flex flex-wrap justify-between items-center gap-4">
-      <h2 class="text-4xl font-bold">Все вакансии</h2>
+      <h2 class="text-4xl font-bold mb-4">Все вакансии</h2>
       <div class="flex flex-wrap gap-5">
         <select class="py-2 px-3 border rounded-md outline-none">
           <option>По названию</option>
@@ -81,7 +81,7 @@ import CardList from '../components/CardList.vue'
         </div>
       </div>
     </div>
-    <div class="mt-10">
+    <div class="mt-10 mb-16">
       <CardList />
     </div>
   </div>
