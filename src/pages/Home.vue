@@ -5,8 +5,8 @@
 <template>
   <div class="flex flex-col gap-6">
     <!--<Carousel />-->
-    <div class="bg-cover bg-center h-auto bg-[url('/job.jpg')]">
-      <div class="flex flex-col mx-56 my-32 px-24 py-16 w-1/2 gap-6 bg-white/10 rounded-2xl">
+    <div class="bg-cover bg-center bg-[url('/job.jpg')]">
+      <div class="flex flex-col mx-56 mb-32 mt-48 px-24 py-16 w-1/2 gap-6 bg-white/10 rounded-3xl">
         <h1 class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1">
           Обратитесь к <span class="text-gray-600">IT PROFI</span> сегодня и начните поиск
           идеального кандидата для вашей команды
