@@ -1,6 +1,7 @@
 <script setup>
 import Header from './components/Header.vue'
 import Footer from './components/Footer.vue'
+import Drawer from './components/Drawer.vue'
 
 //import CardList from './components/CardList.vue'
 //import { watch } from 'vue'
@@ -14,6 +15,7 @@ watch(sortBy, async()=> {
 </script>
 
 <template>
+  <Drawer />
   <div class="bg-white">
     <Header />
 
