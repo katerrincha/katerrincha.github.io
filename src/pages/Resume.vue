@@ -2,7 +2,7 @@
 import DoResume from '../components/DoResume.vue'
 
 const onClickPublic = () => {
-  alert('Ваше резюме успешно размещено в системе!')
+  alert('Ваше резюме отправлено на проверку, позже оно будет размещено в системе!')
 }
 </script>
 

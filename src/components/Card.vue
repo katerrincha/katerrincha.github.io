@@ -3,18 +3,14 @@ defineProps({
   title: String,
   company: String,
   city: String,
-  isAdded: Boolean,
-  onClickAdd: Function,
   onClickRespond: Function
 })
 </script>
 
 <template>
   <div
-    class="relative bg-white border-2 border-gray-400 rounded-2xl px-11 py-8 cursor-pointer transition hover:-translate-y-1 hover:shadow-xl hover:bg-gray-200 hover:border-0 duration-700"
+    class="bg-white border-2 border-gray-400 rounded-2xl px-11 py-8 cursor-pointer transition hover:-translate-y-1 hover:shadow-xl hover:bg-gray-200 hover:border-0 duration-700"
   >
-    <img @click="onClickAdd" src="/mark.png" alt="mark-1" class="w-4 absolute top-4 left-4" />
-    <!--@click="onClickAdd"-->
     <div class="flex flex-wrap flex-col justify-between items-top gap-5">
       <div class="flex flex-col">
         <b class="text-lg">{{ title }}</b>
