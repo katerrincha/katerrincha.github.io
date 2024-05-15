@@ -1,19 +1,45 @@
 <script setup>
-import { onMounted, ref } from 'vue'
+import { onMounted, reactive, ref, watch } from 'vue'
 import axios from 'axios'
 
 import CardList from '../components/CardList.vue'
 
-const items = ref([])
+const items = ref([]) //state хранит все вакансии (массив)
 
-onMounted(async () => {
+const filters = reactive({
+  //храним фильтры
+  sortBy: '',
+  searchQ: ''
+})
+
+const onChangeSelect = (event) => {
+  // две функции следят за изменением селекта и поиска
+  filters.sortBy = event.target.value
+}
+const onChangeSearch = (event) => {
+  filters.searchQ = event.target.value
+}
+
+const fetchItems = async () => {
+  // при любом изменении фильтра или поиска выполняет запрос на бэк
   try {
-    const { data } = await axios.get('https://d6f93ca968f408cd.mokky.dev/items')
+    const params = {
+      sortBy: filters.sortBy
+    }
+    if (filters.searchQ) {
+      params.title = `*${filters.searchQ}*`
+    }
+    const { data } = await axios.get(`https://d6f93ca968f408cd.mokky.dev/items`, {
+      params
+    })
     items.value = data
   } catch (err) {
     console.log(err)
   }
-})
+}
+
+onMounted(fetchItems)
+watch(filters, fetchItems)
 </script>
 
 <template>
@@ -80,15 +106,16 @@ onMounted(async () => {
     <div class="flex flex-wrap justify-between items-center gap-4">
       <h2 class="text-4xl font-bold mb-4">Все вакансии</h2>
       <div class="flex flex-wrap gap-5">
-        <select class="py-2 px-3 border rounded-md outline-none">
-          <option>По названию</option>
-          <option>По организации</option>
-          <option>По местоположению</option>
+        <select @change="onChangeSelect" class="py-2 px-3 border rounded-md outline-none">
+          <option value="title">По названию</option>
+          <option value="company">По организации</option>
+          <option value="city">По городу</option>
         </select>
 
         <div class="relative">
           <img class="absolute left-4 top-3 w-5 opacity-40" src="/search.png" alt="search" />
           <input
+            @input="onChangeSearch"
             class="border rounded-md py-2 pl-11 pr-6 outline-none focus:border-gray-400"
             placeholder="Поиск..."
           />

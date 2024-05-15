@@ -20,7 +20,7 @@ const onClickRespond = () => {
       :title="item.title"
       :company="item.company"
       :city="item.city"
-      :is-added="true"
+      :isAdded="item.isAdded"
       :onClickAdd="onClickAdd"
       :onClickRespond="onClickRespond"
     />

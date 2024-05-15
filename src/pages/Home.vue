@@ -1,7 +1,5 @@
 <script setup>
 //import Carousel from '../components/Carousel.vue'
-const element = document.getElementById('img')
-element.scrollIntoView()
 </script>
 
 <template>
