@@ -15,7 +15,7 @@ watch(sortBy, async()=> {
 </script>
 
 <template>
-  <Drawer />
+  <!--<Drawer />-->
   <div class="bg-white">
     <Header />
 

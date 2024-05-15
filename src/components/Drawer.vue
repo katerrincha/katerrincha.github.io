@@ -12,7 +12,6 @@ import VacancyItem from './VacancyItem.vue'
         <img class="w-5 rotate-180" src="/black_arrow.png" alt="black_arrow" />
         <h1>Вернуться</h1>
       </div>
-      <h2>название вакансии</h2>
       <VacancyItem />
     </div>
   </div>

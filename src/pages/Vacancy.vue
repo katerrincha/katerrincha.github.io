@@ -1,5 +1,19 @@
 <script setup>
+import { onMounted, ref } from 'vue'
+import axios from 'axios'
+
 import CardList from '../components/CardList.vue'
+
+const items = ref([])
+
+onMounted(async () => {
+  try {
+    const { data } = await axios.get('https://d6f93ca968f408cd.mokky.dev/items')
+    items.value = data
+  } catch (err) {
+    console.log(err)
+  }
+})
 </script>
 
 <template>
@@ -82,7 +96,7 @@ import CardList from '../components/CardList.vue'
       </div>
     </div>
     <div class="mt-10 mb-16">
-      <CardList />
+      <CardList :items="items" />
     </div>
   </div>
 </template>
