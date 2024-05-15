@@ -53,7 +53,7 @@ import CardList from '../components/CardList.vue'
         письмо прямо через нашу платформу. Это упростит процесс поиска работы и повысит ваши шансы
         на успешное трудоустройство.
       </span>
-      <RouterLink to="/employer">
+      <RouterLink to="/resume">
         <div
           class="flex justify-between items-center gap-6 py-4 px-6 text-indigo-500 text-lg font-bold transition hover:translate-x-1.5 hover:text-indigo-800 duration-700"
         >
