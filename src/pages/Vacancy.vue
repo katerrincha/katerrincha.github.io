@@ -43,7 +43,7 @@ watch(filters, fetchItems)
 </script>
 
 <template>
-  <div class="px-56 pt-36">
+  <div id="top" class="px-56 pt-36">
     <h1 class="font-bold text-4xl">Идеальная вакансия ждет Вас - просто найдите ее здесь</h1>
     <div class="grid grid-rows-2 grid-cols-4 gap-4 mt-12 mb-16">
       <div
@@ -124,6 +124,13 @@ watch(filters, fetchItems)
     </div>
     <div class="mt-10 mb-16">
       <CardList :items="items" />
+    </div>
+    <div
+      class="fixed w-11 opacity-70 bottom-16 right-16 transition hover:-translate-y-4 hover:opacity-100 duration-700"
+    >
+      <a href="#top">
+        <img class="rotate-90" src="/new_arrow.png" alt="" />
+      </a>
     </div>
   </div>
 </template>

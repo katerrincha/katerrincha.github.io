@@ -7,7 +7,7 @@ const onClickPublic = () => {
 </script>
 
 <template>
-  <div class="px-56 pt-36 flex flex-col flex-wrap gap-3 mb-10">
+  <div id="top" class="px-56 pt-36 flex flex-col flex-wrap gap-3 mb-10">
     <span class="text-4xl font-bold">Публикация резюме</span>
 
     <div class="mt-10 flex items-center gap-8 transition hover:translate-x-1.5 duration-700">
@@ -38,6 +38,13 @@ const onClickPublic = () => {
       </div>
     </div>
     <span class="mt-14 text-4xl font-bold">Форма для заполнения</span>
+  </div>
+  <div
+    class="fixed w-11 opacity-70 bottom-16 right-16 transition hover:-translate-y-4 hover:opacity-100 duration-700"
+  >
+    <a href="#top">
+      <img class="rotate-90" src="/new_arrow.png" alt="" />
+    </a>
   </div>
   <DoResume :onClickPublic="onClickPublic" />
 </template>

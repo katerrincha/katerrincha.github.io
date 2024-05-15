@@ -4,8 +4,7 @@
 
 <template>
   <div class="flex flex-col gap-6">
-    <!--<Carousel />-->
-    <div id="img" class="bg-cover bg-center bg-[url('/job.jpg')]">
+    <div id="main_img" class="bg-cover bg-center bg-[url('/job.jpg')]">
       <div class="flex flex-col mx-56 mb-32 mt-48 px-24 py-16 w-1/2 gap-6 bg-white/10 rounded-3xl">
         <h1
           class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1 duration-700"
@@ -129,6 +128,13 @@
           </div>
         </div>
       </div>
+    </div>
+    <div
+      class="fixed w-11 opacity-70 bottom-16 right-16 transition hover:-translate-y-4 hover:opacity-100 duration-700"
+    >
+      <a href="#main_img">
+        <img class="rotate-90" src="/new_arrow.png" alt="" />
+      </a>
     </div>
   </div>
 </template>
