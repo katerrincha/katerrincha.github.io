@@ -1,10 +1,20 @@
 <script setup>
-import { onMounted, reactive, ref, watch } from 'vue'
+import { onMounted, reactive, ref, watch, provide } from 'vue'
 import axios from 'axios'
 
 import CardList from '../components/CardList.vue'
+import Drawer from '../components/Drawer.vue'
 
 const items = ref([]) //state хранит все вакансии (массив)
+
+const drawerOpen = ref(false)
+
+const closeDrawer = () => {
+  drawerOpen.value = false
+}
+const openDrawer = () => {
+  drawerOpen.value = true
+}
 
 const filters = reactive({
   //храним фильтры
@@ -40,9 +50,15 @@ const fetchItems = async () => {
 
 onMounted(fetchItems)
 watch(filters, fetchItems)
+
+provide('cardActions', {
+  closeDrawer,
+  openDrawer
+})
 </script>
 
 <template>
+  <Drawer v-if="drawerOpen" />
   <div id="top" class="px-56 pt-36">
     <h1 class="font-bold text-4xl">Идеальная вакансия ждет Вас - просто найдите ее здесь</h1>
     <div class="grid grid-rows-2 grid-cols-4 gap-4 mt-12 mb-16">
@@ -124,6 +140,7 @@ watch(filters, fetchItems)
     </div>
     <div class="mt-10 mb-16">
       <CardList :items="items" />
+      <!--@openDrawer="openDrawer"-->
     </div>
     <div
       class="fixed w-11 opacity-70 bottom-16 right-16 transition hover:-translate-y-4 hover:opacity-100 duration-700"

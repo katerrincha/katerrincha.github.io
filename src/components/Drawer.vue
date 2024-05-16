@@ -1,5 +1,9 @@
 <script setup>
+import { inject } from 'vue'
 import VacancyItem from './VacancyItem.vue'
+
+const { closeDrawer } = inject('cardActions')
+//const emit = defineEmits(['closeDrawer'])
 </script>
 
 <template>
@@ -7,6 +11,7 @@ import VacancyItem from './VacancyItem.vue'
     <div class="fixed top-0 left-0 h-full w-full bg-black opacity-70 z-20"></div>
     <div class="bg-white w-2/3 h-3/4 fixed z-30 top-32 rounded-3xl p-10">
       <div
+        @click="closeDrawer"
         class="flex items-center gap-4 font-semibold text-sm transition hover:-translate-x-1.5 duration-700"
       >
         <img class="w-5 rotate-180" src="/black_arrow.png" alt="black_arrow" />
@@ -16,3 +21,4 @@ import VacancyItem from './VacancyItem.vue'
     </div>
   </div>
 </template>
+<!-- -->
