@@ -7,7 +7,7 @@ const onClickPublic = () => {
 </script>
 
 <template>
-  <div id="top" class="px-56 pt-36 flex flex-col flex-wrap gap-3 mb-10">
+  <div id="top" class="px-60 pt-36 flex flex-col flex-wrap gap-3 mb-10">
     <span class="text-4xl font-bold">Публикация резюме</span>
 
     <div class="mt-10 flex items-center gap-8 transition hover:translate-x-1.5 duration-700">

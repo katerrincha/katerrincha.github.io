@@ -74,7 +74,7 @@ provide('cardActions', {
 
 <template>
   <Drawer v-if="drawerOpen" :items="items" />
-  <div id="top" class="px-56 pt-36">
+  <div id="top" class="px-60 pt-36">
     <h1 class="font-bold text-4xl">Идеальная вакансия ждет Вас - просто найдите ее здесь</h1>
     <div class="grid grid-rows-2 grid-cols-4 gap-4 mt-12 mb-16">
       <div
@@ -117,7 +117,7 @@ provide('cardActions', {
       </div>
     </div>
 
-    <div class="flex flex-row justify-between items-center gap-6 mb-16">
+    <div class="flex flex-row justify-between items-center gap-6 mb-20">
       <span class="w-2/3">
         Вы можете легко и быстро откликнуться на интересующие вас вакансии,
         <span class="font-bold text-indigo-500 font">отправив свое резюме</span> и сопроводительное

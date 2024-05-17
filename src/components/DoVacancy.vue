@@ -6,8 +6,9 @@ defineProps({
 
 <template>
   <form
-    class="mx-56 mb-20 mt-12 p-10 space-y-6 border border-gray-300 bg-gray-100 rounded-3xl hover:border-0 hover:shadow-xl hover:bg-gray-200 transition hover:-translate-y-0.5 duration-700"
+    class="mx-60 mb-20 mt-12 p-14 space-y-6 border border-gray-300 bg-gray-100 rounded-3xl hover:border-0 hover:shadow-xl hover:bg-gray-200 transition hover:-translate-y-0.5 duration-700"
   >
+    <h2 class="font-medium pb-3">Основная информация</h2>
     <div class="grid md:grid-cols-2 gap-6">
       <div class="relative z-0 w-full group">
         <input
@@ -41,7 +42,7 @@ defineProps({
       </div>
     </div>
 
-    <div class="relative z-0 w-full group">
+    <div class="relative z-0 w-1/2 pr-3 group">
       <input
         type="text"
         name="floating_first_name"

@@ -5,7 +5,7 @@
 <template>
   <div class="flex flex-col gap-6">
     <div id="main_img" class="bg-cover bg-center bg-[url('/job.jpg')]">
-      <div class="flex flex-col mx-56 mb-32 mt-48 px-24 py-16 w-1/2 gap-6 bg-white/10 rounded-3xl">
+      <div class="flex flex-col mx-60 mb-32 mt-48 px-24 py-16 w-1/2 gap-6 bg-white/10 rounded-3xl">
         <h1
           class="text-3xl font-bold text-indigo-800 uppercase transition hover:-translate-y-1 duration-700"
         >
@@ -38,7 +38,7 @@
       </div>
     </div>
 
-    <div class="grid grid-cols-4 grid-rows-1 px-56 pt-8 gap-4">
+    <div class="grid grid-cols-4 grid-rows-1 px-60 pt-8 gap-4">
       <div
         class="col-span-2 grid place-content-between text-gray-700 border-2 border-gray-700 space-y-14 bg-white rounded-3xl px-10 py-10 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indig0-50 hover:text-white hover:bg-indigo-500 hover:border-0 duration-700"
       >
@@ -59,7 +59,7 @@
       </div>
     </div>
 
-    <div class="flex flex-row justify-between items-center px-56 gap-6 pt-10">
+    <div class="flex flex-row justify-between items-center px-60 gap-6 pt-10">
       <div class="flex flex-col w-2/3">
         <h1 class="text-4xl font-bold transition">О нас</h1>
         <p class="transition font-normal pt-10">
@@ -90,7 +90,7 @@
       </RouterLink>
     </div>
 
-    <div class="flex flex-col flex-wrap gap-4 px-56 mb-20 pt-10">
+    <div class="flex flex-col flex-wrap gap-4 px-60 mb-20 pt-10">
       <span class="text-4xl font-bold">Почему IT PROFI?</span>
       <div class="flex flex-row gap-10 pt-8">
         <div class="flex items-center gap-8 transition hover:translate-x-1.5 duration-700">

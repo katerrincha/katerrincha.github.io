@@ -1,6 +1,6 @@
 <template>
   <footer
-    class="flex flex-col justify-between rounded-3xl mx-56 mb-10 bg-indigo-500 flex-wrap px-20 pt-16 pb-9"
+    class="flex flex-col justify-between rounded-3xl mx-60 mb-10 bg-indigo-500 flex-wrap p-14 pb-9"
   >
     <div class="flex flex-row gap-32 mb-6">
       <div class="text-white text-sm space-y-3">

@@ -7,7 +7,7 @@ const onClickPublic = () => {
 </script>
 
 <template>
-  <div id="top" class="px-56 pt-36 flex flex-col flex-wrap gap-3 mb-10">
+  <div id="top" class="px-60 pt-36 flex flex-col flex-wrap gap-3 mb-10">
     <span class="text-4xl font-bold">Регистрация вакансий</span>
     <div class="grid grid-cols-4 grid-rows-1 gap-4 mt-8">
       <div

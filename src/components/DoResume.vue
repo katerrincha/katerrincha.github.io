@@ -6,7 +6,7 @@ defineProps({
 
 <template>
   <form
-    class="mx-56 mb-20 mt-12 p-10 space-y-6 border border-gray-300 bg-gray-100 rounded-3xl hover:border-0 hover:shadow-xl hover:bg-gray-200 transition hover:-translate-y-0.5 duration-700"
+    class="mx-60 mb-20 mt-12 p-10 space-y-6 border border-gray-300 bg-gray-100 rounded-3xl hover:border-0 hover:shadow-xl hover:bg-gray-200 transition hover:-translate-y-0.5 duration-700"
   >
     <h2 class="font-medium pb-2">Основная информация</h2>
     <div class="grid md:grid-cols-2 gap-6">
@@ -285,7 +285,7 @@ defineProps({
         id="message"
         rows="4"
         class="block p-6 w-full text-sm text-gray-900 bg-white rounded-3xl border border-gray-200 outline-none focus:border-indigo-300"
-        placeholder="Расскажите о своих личных качествах и особенностях"
+        placeholder="Расскажите о своих личных качествах и достижениях"
       ></textarea>
     </div>
 
