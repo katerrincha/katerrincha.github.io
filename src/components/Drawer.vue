@@ -1,24 +1,43 @@
 <script setup>
 import { inject } from 'vue'
 import VacancyItem from './VacancyItem.vue'
+defineProps({
+  items: Array
+})
 
-const { closeDrawer } = inject('cardActions')
+const { cart, closeDrawer, removeFromDrawer } = inject('cardActions')
 //const emit = defineEmits(['closeDrawer'])
+
+//const emit = defineEmits(['onClickRemove'])
+
+const onClickRespond = () => {
+  alert('Вы откликнулись на вакансию, ожидайте ответ!')
+}
 </script>
 
 <template>
   <div class="relative flex justify-center">
     <div class="fixed top-0 left-0 h-full w-full bg-black opacity-70 z-20"></div>
-    <div class="bg-white w-2/3 h-3/4 fixed z-30 top-32 rounded-3xl p-10">
+    <div class="bg-white w-1/2 h-5/6 fixed z-30 top-16 rounded-3xl p-10 overflow-y-auto">
       <div
-        @click="closeDrawer"
+        @click="
+          () => {
+            removeFromDrawer()
+            closeDrawer()
+          }
+        "
         class="flex items-center gap-4 font-semibold text-sm transition hover:-translate-x-1.5 duration-700"
       >
         <img class="w-5 rotate-180" src="/black_arrow.png" alt="black_arrow" />
         <h1>Вернуться</h1>
       </div>
-      <VacancyItem />
+      <VacancyItem
+        v-for="item in cart"
+        :key="item.id"
+        :title="item.title"
+        :company="item.company"
+        :city="item.city"
+      />
     </div>
   </div>
 </template>
-<!-- -->

@@ -2,18 +2,20 @@
 import { inject } from 'vue'
 
 defineProps({
+  id: Number,
   title: String,
   company: String,
   city: String,
-  onClickRespond: Function
+  onClickRespond: Function,
+  onClickShow: Function
 })
 
-const { openDrawer } = inject('cardActions')
+//const { openDrawer } = inject('cardActions')
 </script>
 
 <template>
   <div
-    @click="openDrawer"
+    @click="onClickShow"
     class="bg-white border-2 border-gray-400 rounded-2xl px-11 py-8 cursor-pointer transition hover:-translate-y-1 hover:shadow-xl hover:bg-gray-200 hover:border-0 duration-700"
   >
     <div class="flex flex-wrap flex-col justify-between items-top gap-5">

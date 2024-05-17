@@ -6,8 +6,20 @@ import CardList from '../components/CardList.vue'
 import Drawer from '../components/Drawer.vue'
 
 const items = ref([]) //state хранит все вакансии (массив)
+const cart = ref([]) //новый массив описания ваканский
 
-const drawerOpen = ref(false)
+const addToDrawer = (item) => {
+  //добавление описания вакансии на драйвер
+  cart.value.push(item)
+  console.log(item)
+}
+const removeFromDrawer = () => {
+  //добавление описания вакансии на драйвер
+  cart.value.splice(0, cart.value.length)
+  console.log('delete!')
+}
+
+const drawerOpen = ref(false) // по умолчанию драйвер закрыт
 
 const closeDrawer = () => {
   drawerOpen.value = false
@@ -52,13 +64,16 @@ onMounted(fetchItems)
 watch(filters, fetchItems)
 
 provide('cardActions', {
+  addToDrawer,
+  cart,
   closeDrawer,
-  openDrawer
+  openDrawer,
+  removeFromDrawer
 })
 </script>
 
 <template>
-  <Drawer v-if="drawerOpen" />
+  <Drawer v-if="drawerOpen" :items="items" />
   <div id="top" class="px-56 pt-36">
     <h1 class="font-bold text-4xl">Идеальная вакансия ждет Вас - просто найдите ее здесь</h1>
     <div class="grid grid-rows-2 grid-cols-4 gap-4 mt-12 mb-16">
@@ -139,7 +154,7 @@ provide('cardActions', {
       </div>
     </div>
     <div class="mt-10 mb-16">
-      <CardList :items="items" />
+      <CardList :items="items" @addToDrawer="addToDrawer" @removeFromDriwer="removeFromDrawer" />
       <!--@openDrawer="openDrawer"-->
     </div>
     <div
