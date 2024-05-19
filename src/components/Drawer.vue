@@ -37,6 +37,10 @@ const onClickRespond = () => {
         :title="item.title"
         :company="item.company"
         :city="item.city"
+        :respons="item.respons"
+        :requirements="item.requirements"
+        :conditions="item.conditions"
+        :contacts="item.contacts"
       />
     </div>
   </div>

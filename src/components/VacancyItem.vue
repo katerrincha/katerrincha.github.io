@@ -3,40 +3,40 @@ defineProps({
   id: Number,
   title: String,
   company: String,
-  city: String
+  city: String,
+  respons: String,
+  requirements: String,
+  conditions: String,
+  contacts: String
 })
 </script>
 
 <template>
-  <div class="flex flex-col gap-4 pt-10">
+  <div class="flex flex-col gap-6 pt-10">
     <h1 class="text-2xl mb-6 text-center font-bold text-gray-700">{{ title }}</h1>
-    <div class="space-x-6">
+    <div class="space-x-4">
       <span class="text-lg font-medium text-gray-700">Организация:</span>
       <span>{{ company }}</span>
     </div>
-    <div class="space-x-6">
+    <div class="space-x-4">
       <span class="text-lg font-medium text-gray-700">Город:</span>
       <span>{{ city }}</span>
     </div>
-    <div class="space-y-6">
-      <span class="text-lg font-medium text-gray-700">Описание места работы: <br /> </span>
-      <span>{{ company }}</span>
+    <div class="flex flex-col gap-3">
+      <span class="text-lg font-medium text-gray-700">Обязанности: </span>
+      <span>{{ respons }}</span>
     </div>
-    <div class="">
-      <span class="text-lg font-medium text-gray-700">Обязанности: <br /></span>
-      <span>{{ company }}</span>
+    <div class="flex flex-col gap-3">
+      <span class="text-lg font-medium text-gray-700">Требования:</span>
+      <span>{{ requirements }}</span>
     </div>
-    <div class="">
-      <span class="text-lg font-medium text-gray-700">Требования: <br /></span>
-      <span>{{ company }}</span>
+    <div class="flex flex-col gap-3">
+      <span class="text-lg font-medium text-gray-700">Условия работы:</span>
+      <span>{{ conditions }}</span>
     </div>
-    <div class="">
-      <span class="text-lg font-medium text-gray-700">Условия работы: <br /></span>
-      <span>{{ company }}</span>
-    </div>
-    <div class="">
-      <span class="text-lg font-medium text-gray-700">Контакты: <br /></span>
-      <span>{{ company }}</span>
+    <div class="flex flex-col gap-3">
+      <span class="text-lg font-medium text-gray-700">Контакты:</span>
+      <span>{{ contacts }}</span>
     </div>
 
     <div>

@@ -6,6 +6,10 @@ defineProps({
   title: String,
   company: String,
   city: String,
+  respons: String,
+  requirements: String,
+  conditions: String,
+  contacts: String,
   onClickRespond: Function,
   onClickShow: Function
 })
