@@ -28,4 +28,6 @@
 - Vue Router
 - Axios
 - API для получения данных о вакансиях
+- Vite
 - Provide и inject
+- Tailwind CSS
