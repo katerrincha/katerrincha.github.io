@@ -28,3 +28,4 @@
 - Vue Router
 - Axios
 - API для получения данных о вакансиях
+- Provide и inject
