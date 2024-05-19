@@ -2,8 +2,6 @@ import './assets/main.css'
 
 import { createApp } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
-import { Carousel, initTWE } from 'tw-elements'
-initTWE({ Carousel })
 
 import App from './App.vue'
 import Home from './pages/Home.vue'
@@ -25,7 +23,11 @@ const routes = [
 
 const router = createRouter({
   history: createWebHistory(),
-  routes
+  routes,
+  scrollBehavior(to, from, savedPosition) {
+    // always scroll to top
+    return { top: 0 }
+  }
 })
 
 app.use(router)
