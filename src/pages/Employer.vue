@@ -13,7 +13,7 @@ const onClickPublic = () => {
       <div
         class="row-span-1 col-span-2 grid place-content-between gap-5 text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
       >
-        <h1 class="text-3xl font-bold space">01.</h1>
+        <h1 class="text-3xl font-bold">01.</h1>
         <h2 class="text-xl font-bold">
           заполните все обязательные поля в форме ниже, предоставьте максимально полное и точное
           описание должности и требований к кандидатам
@@ -24,9 +24,7 @@ const onClickPublic = () => {
         class="row-span-1 col-span-1 grid place-content-between gap-5 text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
       >
         <h1 class="text-3xl font-bold">02.</h1>
-        <h2 class="text-xl font-bold">
-          укажите контактные данные для связи с потенциальными кандидатами
-        </h2>
+        <h2 class="text-xl font-bold">укажите контакты для связи с потенциальными кандидатами</h2>
       </div>
       <div
         class="row-span-1 col-span-1 grid place-content-between gap-5 text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"

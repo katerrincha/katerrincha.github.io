@@ -59,18 +59,6 @@ defineProps({
     </div>
 
     <div class="max-w-full">
-      <label for="message" class="block mt-12 mb-2 text-sm font-medium text-gray-500"
-        >Описание места работы</label
-      >
-      <textarea
-        id="message"
-        rows="4"
-        class="block p-6 w-full text-sm text-gray-900 bg-white rounded-3xl border border-gray-200 outline-none focus:border-indigo-300"
-        placeholder=""
-      ></textarea>
-    </div>
-
-    <div class="max-w-full">
       <label for="message" class="block mb-2 text-sm font-medium text-gray-500">Обязанности</label>
       <textarea
         id="message"

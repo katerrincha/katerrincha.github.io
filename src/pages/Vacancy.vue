@@ -76,48 +76,7 @@ provide('cardActions', {
   <Drawer v-if="drawerOpen" :items="items" />
   <div id="top" class="px-60 pt-36">
     <h1 class="font-bold text-4xl">Идеальная вакансия ждет Вас - просто найдите ее здесь</h1>
-    <div class="grid grid-rows-2 grid-cols-4 gap-4 mt-12 mb-16">
-      <div
-        class="row-span-1 col-span-2 grid place-content-between text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
-      >
-        <h1 class="text-3xl font-bold space">01.</h1>
-        <h2 class="text-xl font-bold">разместите свое резюме на платформе</h2>
-      </div>
-
-      <div
-        class="row-span-1 col-span-1 grid place-content-between text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
-      >
-        <h1 class="text-3xl font-bold">02.</h1>
-        <h2 class="text-xl font-bold">найдите подходящую вакансию</h2>
-      </div>
-
-      <div
-        class="row-span-1 col-span-1 grid place-content-between text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
-      >
-        <h1 class="text-3xl font-bold">03.</h1>
-        <h2 class="text-xl font-bold">откликнитесь на предложение</h2>
-      </div>
-
-      <div
-        class="row-span-1 col-span-1 grid place-content-between text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
-      >
-        <h1 class="text-3xl font-bold">04.</h1>
-        <h2 class="text-xl font-bold">ожидайте ответ от работодателя</h2>
-      </div>
-
-      <div
-        class="row-span-1 col-span-3 text-gray-600 bg-white border-2 border-gray-600 rounded-3xl px-10 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
-      >
-        <span class="font-bold"
-          >Используя инструмент фильтрации, Вы быстрее найдете вакансии, соответствующие Вашим
-          интересам и навыкам. <br /><br />Каждая вакансия содержит подробное описание условий, где
-          Вы сможете ознакомиться с ключевыми задачами, которые предстоит решать, и узнать больше о
-          том, что делает эту компанию особенной.</span
-        >
-      </div>
-    </div>
-
-    <div class="flex flex-row justify-between items-center gap-6 mb-20">
+    <div class="flex flex-row justify-between items-center mt-12 gap-6">
       <span class="w-2/3">
         Вы можете легко и быстро откликнуться на интересующие вас вакансии,
         <span class="font-bold text-indigo-500 font">отправив свое резюме</span> и сопроводительное
@@ -132,6 +91,48 @@ provide('cardActions', {
           <img class="w-6" src="/blue_arrow.png" alt="white_arrow" />
         </div>
       </RouterLink>
+    </div>
+    <div class="grid grid-cols-4 grid-rows-1 gap-4 mt-14 mb-14">
+      <div
+        class="row-span-1 col-span-1 grid place-content-between gap-10 text-gray-700 bg-white border-2 border-gray-700 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
+      >
+        <h1 class="text-3xl font-bold space">01.</h1>
+        <h2 class="text-xl font-bold">разместите свое резюме на платформе</h2>
+      </div>
+
+      <div
+        class="row-span-1 col-span-1 grid place-content-between gap-5 text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
+      >
+        <h1 class="text-3xl font-bold">02.</h1>
+        <h2 class="text-xl font-bold">найдите подходящую вакансию</h2>
+      </div>
+
+      <div
+        class="row-span-1 col-span-1 grid place-content-between gap-5 text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
+      >
+        <h1 class="text-3xl font-bold">03.</h1>
+        <h2 class="text-xl font-bold">откликнитесь на предложение</h2>
+      </div>
+
+      <div
+        class="row-span-1 col-span-1 grid place-content-between gap-5 text-indigo-500 bg-white border-2 border-indigo-500 rounded-3xl px-8 py-8 transition hover:-translate-y-1 hover:shadow-2xl hover:bg-indigo-500 hover:text-white hover:border-0 duration-700"
+      >
+        <h1 class="text-3xl font-bold">04.</h1>
+        <h2 class="text-xl font-bold">ожидайте ответ от работодателя</h2>
+      </div>
+    </div>
+
+    <div class="mb-14 flex items-center gap-8 transition hover:translate-x-1.5 duration-700">
+      <img class="w-6" src="/black_arrow.png" alt="arrow" />
+      <div>
+        <span
+          >Используя <span class="text-indigo-600 font-semibold">инструмент фильтрации</span>, Вы
+          быстрее найдете вакансии, соответствующие Вашим интересам и навыкам. Каждая вакансия
+          содержит <span class="text-indigo-600 font-semibold">подробное описание условий</span>,
+          где Вы сможете ознакомиться с ключевыми задачами, которые предстоит решать, и узнать
+          больше о том, что делает эту компанию особенной.</span
+        >
+      </div>
     </div>
 
     <div class="flex flex-wrap justify-between items-center gap-4">
