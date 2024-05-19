@@ -1,35 +1,30 @@
-# first
+# Название проекта
 
-This template should help get you started developing with Vue 3 in Vite.
+Сайт-рекрут IT PROFI
 
-## Recommended IDE Setup
+## Постановка задачи
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+Разработать сайт на тему Рекрутер ИТ с помощью фреймворка Vue.js. Самостоятельно проработать дизайн проекта.
 
-## Customize configuration
+## Использование
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+1. Запустить проект через Vs code: npm run dev
+   или
+2. Открыть через браузер: перейти по адресу https://katerrincha.github.io
 
-## Project Setup
+## Функциональность сайта
 
-```sh
-npm install
-```
+1. Удобная навигация по страницам сайта, возможность вернуться к началу страницы с помощью стрелки справа внизу.
+2. Возможность заполнения резюме для сотрудника, который ищет работу, и заполнения работодателем вакансии для публикации на сайте.
+3. Поиск вакансий по ключевым словам, сортировка результатов поиска по названию, по организации и по городу.
+4. Отображение подробной информации о вакансии при нажатии на карточку с вакансией.
+5. Уникальный дизайн с карточками и кнопками, движущимися при наведении :)
 
-### Compile and Hot-Reload for Development
+## Технологии
 
-```sh
-npm run dev
-```
+Основные технологии и инструменты, использованные в проекте:
 
-### Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+- Vue.js
+- Vue Router
+- Axios
+- API для получения данных о вакансиях
